@@ -3,7 +3,7 @@
    "pipeline": {
       "build": {
          "outputs": ["dist/**"],
-         "dependsOn": ["check:eslint", "check:typescript", "^build"]
+         "dependsOn": ["^build"]
       },
       "check:eslint": {},
       "check:typescript": {},
