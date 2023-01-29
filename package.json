@@ -1,0 +1,27 @@
+{
+   "name": "starter-turborepo-websocket-zod",
+   "version": "1.0.0",
+   "description": "A full stack typesafe starter for websockets client / server applications.",
+   "repository": "git@github.com:matthieu-locussol/starter-turborepo-websocket-zod.git",
+   "scripts": {
+      "dev": "turbo run dev --no-cache --parallel --continue",
+      "test": "turbo run test",
+      "build": "turbo run build --include-dependencies",
+      "clean": "turbo run clean && rm -rf node_modules",
+      "check:eslint": "turbo run check:eslint",
+      "check:prettier": "prettier --list-different --config .prettierrc.json --ignore-path .gitignore --write **/*",
+      "check:typescript": "turbo run check:typescript"
+   },
+   "keywords": [],
+   "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com> (https://www.matthieu-locussol.com)",
+   "license": "MIT",
+   "devDependencies": {
+      "prettier": "^2.8.3",
+      "turbo": "^1.7.0"
+   },
+   "dependencies": {
+      "@commitlint/cli": "^17.4.2",
+      "@commitlint/config-conventional": "^17.4.2",
+      "standard-version": "^9.5.0"
+   }
+}
