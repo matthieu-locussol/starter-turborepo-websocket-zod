@@ -7,57 +7,19 @@ on:
    pull_request:
 
 jobs:
-   eslint:
-      name: Eslint
+   build:
+      name: Build
       runs-on: ubuntu-latest
       steps:
-         - uses: actions/checkout@v2
-         - uses: actions/setup-node@v2
+         - uses: actions/checkout@v3
+         - uses: actions/setup-node@v3
            with:
               node-version: '18.4.0'
-              cache: npm
-              cache-dependency-path: package-lock.json
          - run: npm install
          - run: npm run check:eslint
-
-   prettier:
-      name: Prettier
-      runs-on: ubuntu-latest
-      steps:
-         - uses: actions/checkout@v2
-         - uses: actions/setup-node@v2
-           with:
-              node-version: '18.4.0'
-              cache: npm
-              cache-dependency-path: package-lock.json
-         - run: npm install
          - run: npm run check:prettier
-
-   typescript:
-      name: TypeScript
-      runs-on: ubuntu-latest
-      steps:
-         - uses: actions/checkout@v2
-         - uses: actions/setup-node@v2
-           with:
-              node-version: '18.4.0'
-              cache: npm
-              cache-dependency-path: package-lock.json
-         - run: npm install
          - run: npm run check:typescript
-
-   unit_tests:
-      name: Unit tests
-      runs-on: ubuntu-latest
-      needs: [prettier, typescript, eslint]
-      steps:
-         - uses: actions/checkout@v2
-         - uses: actions/setup-node@v2
-           with:
-              node-version: '18.4.0'
-              cache: npm
-              cache-dependency-path: package-lock.json
-         - run: npm install
+         - run: npm run build
          - run: npm run test
 
    merge_dependabot:
