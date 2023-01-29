@@ -63,6 +63,7 @@ importers:
          '@fastify/websocket': 7.1.2
          fastify: 4.12.0
          shared: link:../../packages/shared
+         ts-pattern: 4.1.3
       devDependencies:
          '@types/node': 18.11.18
          '@types/ws': 8.5.4
@@ -70,7 +71,6 @@ importers:
          config-typescript: link:../../packages/config-typescript
          eslint: 8.33.0
          ts-node-dev: 2.0.0_awa2wsr5thmg3i7jqycphctjfq
-         ts-pattern: 4.1.3
          typescript: 4.9.4
 
    packages/config-eslint:
@@ -6774,7 +6774,7 @@ packages:
          {
             integrity: sha512-8beXMWTGEv1JfDjSxfNhe4uT5jKYdhmEUKzt4gZW9dmHlquq3b+IbEyA7vX9LjBfzHmvKnM4HiomAUCyaW2Pew==,
          }
-      dev: true
+      dev: false
 
    /tsconfig-paths/3.14.1:
       resolution:
