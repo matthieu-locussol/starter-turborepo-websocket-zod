@@ -1,6 +1,6 @@
 {
    "name": "starter-turborepo-websocket-zod",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "A full stack typesafe starter for websockets client / server applications.",
    "repository": "git@github.com:matthieu-locussol/starter-turborepo-websocket-zod.git",
    "scripts": {
