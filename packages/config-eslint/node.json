@@ -9,6 +9,7 @@
    ],
    "parser": "@typescript-eslint/parser",
    "rules": {
+      "no-console": "off",
       "no-param-reassign": "off",
       "no-underscore-dangle": "off",
       "no-restricted-syntax": [
