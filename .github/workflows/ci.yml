@@ -15,10 +15,10 @@ jobs:
          - uses: actions/setup-node@v2
            with:
               node-version: '18.4.0'
-              cache: yarn
-              cache-dependency-path: yarn.lock
-         - run: yarn install
-         - run: yarn check:eslint
+              cache: npm
+              cache-dependency-path: package-lock.json
+         - run: npm install
+         - run: npm run check:eslint
 
    prettier:
       name: Prettier
@@ -28,10 +28,10 @@ jobs:
          - uses: actions/setup-node@v2
            with:
               node-version: '18.4.0'
-              cache: yarn
-              cache-dependency-path: yarn.lock
-         - run: yarn install
-         - run: yarn check:prettier
+              cache: npm
+              cache-dependency-path: package-lock.json
+         - run: npm install
+         - run: npm run check:prettier
 
    typescript:
       name: TypeScript
@@ -41,10 +41,10 @@ jobs:
          - uses: actions/setup-node@v2
            with:
               node-version: '18.4.0'
-              cache: yarn
-              cache-dependency-path: yarn.lock
-         - run: yarn install
-         - run: yarn check:typescript
+              cache: npm
+              cache-dependency-path: package-lock.json
+         - run: npm install
+         - run: npm run check:typescript
 
    unit_tests:
       name: Unit tests
@@ -55,10 +55,10 @@ jobs:
          - uses: actions/setup-node@v2
            with:
               node-version: '18.4.0'
-              cache: yarn
-              cache-dependency-path: yarn.lock
-         - run: yarn install
-         - run: yarn test
+              cache: npm
+              cache-dependency-path: package-lock.json
+         - run: npm install
+         - run: npm run test
 
    merge_dependabot:
       name: 'Merge (Dependabot)'
