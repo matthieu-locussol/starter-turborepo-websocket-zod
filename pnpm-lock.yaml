@@ -66,8 +66,8 @@ importers:
   apps/server:
     dependencies:
       '@fastify/websocket':
-        specifier: ^7.1.2
-        version: 7.1.2
+        specifier: ^8.1.0
+        version: 8.1.0
       fastify:
         specifier: ^4.12.0
         version: 4.12.0
@@ -805,8 +805,8 @@ packages:
       fast-json-stringify: 5.5.0
     dev: false
 
-  /@fastify/websocket@7.1.2:
-    resolution: {integrity: sha512-OBaPR3KVkDmhJpCy+RtM8CwwV67ieRRbvWtpHqRNoMt+AnHLBiNmrTwHs3/DKjmnI1cqdGTaQ+NhKtDtkk1l/Q==}
+  /@fastify/websocket@8.1.0:
+    resolution: {integrity: sha512-7Tk+ODgvS/S9IyPXuXDU1v5tpchAeSWFH0B3Ldz+cnBKy5+lEmuj4ncLhVUzXgn9w3ycX/Vhf1mEEkcemBFUIQ==}
     dependencies:
       fastify-plugin: 4.5.0
       ws: 8.12.0
