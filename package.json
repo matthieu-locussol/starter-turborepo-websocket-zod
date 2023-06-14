@@ -18,7 +18,7 @@
    "license": "MIT",
    "devDependencies": {
       "@commitlint/cli": "^17.4.2",
-      "@commitlint/config-conventional": "^17.4.2",
+      "@commitlint/config-conventional": "^17.6.5",
       "husky": "^8.0.3",
       "prettier": "^2.8.3",
       "pretty-quick": "^3.1.3",
