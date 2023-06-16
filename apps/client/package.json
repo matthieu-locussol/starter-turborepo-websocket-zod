@@ -11,7 +11,7 @@
    "author": "Matthieu Locussol <dev.matthieu.locussol@gmail.com> (https://www.matthieu-locussol.com)",
    "license": "MIT",
    "dependencies": {
-      "@vitejs/plugin-react": "^3.0.1",
+      "@vitejs/plugin-react": "^4.0.0",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
       "shared": "workspace:^1.0.0",
