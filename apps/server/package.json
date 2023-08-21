@@ -17,7 +17,7 @@
       "ts-pattern": "^5.0.1"
    },
    "devDependencies": {
-      "@types/node": "^20.3.1",
+      "@types/node": "^20.5.1",
       "@types/ws": "^8.5.5",
       "config-eslint": "workspace:^1.0.0",
       "config-typescript": "workspace:^1.0.0",
